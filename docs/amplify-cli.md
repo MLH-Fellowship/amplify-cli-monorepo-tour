@@ -14,7 +14,7 @@ Now open the `amplify-cli` project in your favourite IDE.
 
 ## Structure
 
-The Amplify CLI monorepo (multi-package repositories) has the following top level structure. This strucutre excludes common configuration files like `.gitignore`, markdown files and files under `files.exclude` in your project's `.vscode/settings.json` so that we can focus on the main parts.
+The Amplify CLI monorepo (multi-package repositories) has the following top level structure. This structure excludes common configuration files like `.gitignore`, markdown files and files under `files.exclude` in your project's `.vscode/settings.json` so that we can focus on the main parts.
 
 ```
 ├── .circleci
@@ -77,9 +77,20 @@ Example
 
 - Go to `amplify_init.exp` script and observe line 3 - `spawn ./.circleci/amplify_init.sh $repo`. 
 
-- All expect scripts in the folder follow a similar pattern of using `spawn` command to run the `.sh` scripts in the folder.
+- All expect scripts in the folder follow a similar pattern of using `spawn` command to run the relevant `.sh` scripts in the folder.
 
 - Then `expect` and `send` commands are used in combination in the expect script.
 
+CircleCI believes in configuration as code. Your entire continuous integration and deployment process is orchestrated through a single config file as mentioned below.
+
 Now open the `config.base.yml` file.
+
+YAML allows declaring a node as an anchor. This means this node will be referred to somewhere later in the YAML.
+
+We can use an anchor at the beginning of our config file to set these lines as our default for jobs.
+
+![](./assets/anchor.png)
+
+Then we use an alias with each job to write less lines.
+
 
