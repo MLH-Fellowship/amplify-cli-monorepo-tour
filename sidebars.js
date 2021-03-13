@@ -1,14 +1,10 @@
 module.exports = {
   docs: [
+    "amplify-cli",
     {
       type: "category",
-      label: "Amplify CLI",
-      items: [
-        "amplify-cli",
-        {
-          "amplify-util-mock": ["amplify-util-mock"],
-        },
-      ],
+      label: "amplify-util-mock",
+      items: ["amplify-util-mock"],
     },
   ],
 };

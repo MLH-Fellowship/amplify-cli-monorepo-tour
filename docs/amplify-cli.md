@@ -1,7 +1,7 @@
 ---
 id: amplify-cli
 title: Amplify CLI
-sidebar_label: Introduction
+sidebar_label: Amplify CLI
 slug: /
 ---
 
