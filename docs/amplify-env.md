@@ -27,7 +27,7 @@ The code in these files mostly uses functions defined in the `context` object. F
 - Finally, it initializes each `providerModule` with the settings for new environment.
 
 ### `get.ts`
-- Used for `amplify env get <envname>`, through which you can list all details for <envname> environment. Details include the AWS Region, IAM roles, S3 bucket and stack information. 
+- Used for `amplify env get <envname>`, through which you can list all details for `<envname>` environment. Details include the AWS Region, IAM roles, S3 bucket and stack information. 
 - It gets a list of environments using `getEnvDetails()` and performs a search for the input `<envname>`. If found, it uses the `printEnvInfo` function found in `packages/amplify-cli/src/commands/helpers/envUtils.ts`.
 
 ### `import.ts`
