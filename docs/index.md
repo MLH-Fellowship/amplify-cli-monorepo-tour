@@ -93,7 +93,7 @@ CircleCI believes in configuration as code. Your entire continuous integration a
 
 Now open the `config.base.yml` file.
 
-This file is a collection of workflows, jobs and steps.  Workflows are responsible for orchestrating multiple jobs. Jobs are responsible for running a series of steps that perform commands. Steps run commands (such as installing dependencies or running tests) and shell scripts to do the work required for our project.
+This file is a collection of workflows, jobs and steps. Workflows are responsible for orchestrating multiple jobs. Jobs are responsible for running a series of steps that perform commands. Steps run commands (such as installing dependencies or running tests) and shell scripts to do the work required for our project.
 
 YAML allows declaring a node as an anchor. This means this node will be referred to somewhere later in the YAML.
 
@@ -150,9 +150,9 @@ The `github-release.ts` script is used to publish Amplify CLI GitHub release und
 
 The `split-e2e-tests.ts` is an interesting script which defines concurrency (no. of parallel jobs allowed) and different AWS regions which are used to run the tests. It has a long array of test suites sorted according to their runtime and utilities like `sortTestsBasedOnTime` help to achieve the same.
 
-The execution of the `split-e2e-tests.ts` script starts from the [main function](https://github.com/aws-amplify/amplify-cli/blob/f3b1d1d66fa2705a6ee73b5732c3919cd77632f7/scripts/split-e2e-tests.ts#L306). 
+The execution of the `split-e2e-tests.ts` script starts from the [main function](https://github.com/aws-amplify/amplify-cli/blob/f3b1d1d66fa2705a6ee73b5732c3919cd77632f7/scripts/split-e2e-tests.ts#L306).
 
-The initial step is to load the `config.base.yml` file using the `loadConfig()` function. 
+The initial step is to load the `config.base.yml` file using the `loadConfig()` function.
 
 Then the `splitTests()` function takes the CircleCI config and converts each test inside that job into a separate job.
 
