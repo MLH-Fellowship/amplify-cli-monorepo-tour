@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{71:function(a){a.exports=JSON.parse('{"allTagsPath":"/amplify-cli-monorepo-tour/blog/tags","slug":"java-script","name":"javascript","count":2,"permalink":"/amplify-cli-monorepo-tour/blog/tags/java-script"}')}}]);
