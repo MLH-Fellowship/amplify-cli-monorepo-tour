@@ -1,4 +1,9 @@
-# Amplify CLI
+---
+id: amplify-cli
+title: Amplify CLI
+sidebar_label: Amplify CLI
+slug: /
+---
 
 The Amplify Command Line Interface (CLI) monorepo tour is a guide for software developers by software developers. This guide aims to help new Amazon engineers and the huge awesome community of open source contributors to get started with the development and improvement of the Amplify CLI.
 
@@ -73,9 +78,10 @@ expect 	 Waits for program output.
 send 	 Sends a reply to your program.
 interact Allows you to interact with your program.
 ```
+
 Example
 
-- Go to `amplify_init.exp` script and observe line 3 - `spawn ./.circleci/amplify_init.sh $repo`. 
+- Go to `amplify_init.exp` script and observe line 3 - `spawn ./.circleci/amplify_init.sh $repo`.
 
 - All expect scripts in the folder follow a similar pattern of using `spawn` command to run the relevant `.sh` scripts in the folder.
 

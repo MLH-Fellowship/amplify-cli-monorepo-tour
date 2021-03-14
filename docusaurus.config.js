@@ -1,103 +1,106 @@
 module.exports = {
-  title: 'Amplify CLI Monorepo Tour',
-  tagline: 'A guide for software developers by software developers',
+  title: "Amplify CLI Monorepo Tour",
+  tagline: "A guide for software developers by software developers.",
   url: 'https://mlh-fellowship.github.io',
   baseUrl: '/amplify-cli-monorepo-tour/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'MLH-Fellowship', // Usually your GitHub org/user name.
-  projectName: 'amplify-cli-monorepo-tour', // Usually your repo name.
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "MLH-Fellowship", // Usually your GitHub org/user name.
+  projectName: "amplify-cli-monorepo-tour", // Usually your repo name.
   themeConfig: {
+    colorMode: { defaultMode: "dark" },
     navbar: {
-      title: 'Amplify CLI',
+      title: "Amplify CLI Monorepo Tour",
+      style: "dark",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour",
+          label: "View on GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
+      logo: {
+        alt: "AWS Amplify Logo",
+        src: "img/logo.svg",
+        href: "https://aws.amazon.com/amplify/",
+      },
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Amplify CLI",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "amplify-util-mock",
+              to: "docs/amplify-util-mock/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Official GitHub",
+              href: "https://github.com/aws-amplify",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discord.gg/amplify",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/AWSAmplify",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "View on GitHub",
+              href:
+                "https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MLH-Fellowship. Built with Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour/edit/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

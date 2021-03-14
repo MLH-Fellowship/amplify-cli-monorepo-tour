@@ -1,7 +1,13 @@
 module.exports = {
-  someSidebar: {
-    "Amplify CLI": ['doc1'],
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-  },
+  docs: [
+    "amplify-cli",
+    {
+      type: "category",
+      label: "amplify-util-mock",
+      items: [
+        "amplify-util-mock/index",
+        "amplify-util-mock/commands",
+      ],
+    },
+  ],
 };
