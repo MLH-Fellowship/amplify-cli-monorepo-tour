@@ -25,6 +25,12 @@ module.exports = {
           position: "left",
         },
         {
+          to: "blog/",
+          activeBasePath: "blog",
+          label: "blogs",
+          position: "left",
+        },
+        {
           href: "https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour",
           label: "View on GitHub",
           position: "right",
