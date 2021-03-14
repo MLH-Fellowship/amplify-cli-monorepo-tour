@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>Amplify CLI Monorepo Tour Blog</title>
-        <link>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog</link>
+        <link>https://mlh-fellowship.github.io/blog</link>
         <description>Amplify CLI Monorepo Tour Blog</description>
         <lastBuildDate>Mon, 01 Feb 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Major League Hacking Fellows Recap of Winter 2020 Program]]></title>
-            <link>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/amplify-cli-monorepo-tour/blog/hola</link>
+            <link>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog/hola</link>
             <guid>hola</guid>
             <pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Last September we welcomed our second cohort of students from MLH Fellowship powered by Major League Hacking. AWS Amplify was part of the inaugural MLH cohort last Summer and it was a great experience — you can read about it here.]]></description>
         </item>
         <item>
             <title><![CDATA[Major League Hacking Fellows Recap of Summer 2020 Program]]></title>
-            <link>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/amplify-cli-monorepo-tour/blog/welcome</link>
+            <link>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Wed, 02 Sep 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Building Amplify as Open Source Software has given us many advantages — for one, it’s enabled us to accelerate development and work alongside our developers. We are always on the lookout for initiatives to grow our open source community.]]></description>

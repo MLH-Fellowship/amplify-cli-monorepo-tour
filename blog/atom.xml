@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog</id>
+    <id>https://mlh-fellowship.github.io/blog</id>
     <title>Amplify CLI Monorepo Tour Blog</title>
     <updated>2021-02-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog"/>
+    <link rel="alternate" href="https://mlh-fellowship.github.io/blog"/>
     <subtitle>Amplify CLI Monorepo Tour Blog</subtitle>
-    <icon>https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/img/favicon.ico</icon>
+    <icon>https://mlh-fellowship.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Major League Hacking Fellows Recap of Winter 2020 Program]]></title>
         <id>hola</id>
-        <link href="https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/amplify-cli-monorepo-tour/blog/hola"/>
+        <link href="https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog/hola"/>
         <updated>2021-02-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Last September we welcomed our second cohort of students from MLH Fellowship powered by Major League Hacking. AWS Amplify was part of the inaugural MLH cohort last Summer and it was a great experience — you can read about it here.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major League Hacking Fellows Recap of Summer 2020 Program]]></title>
         <id>welcome</id>
-        <link href="https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/amplify-cli-monorepo-tour/blog/welcome"/>
+        <link href="https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/blog/welcome"/>
         <updated>2020-09-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Building Amplify as Open Source Software has given us many advantages — for one, it’s enabled us to accelerate development and work alongside our developers. We are always on the lookout for initiatives to grow our open source community.]]></summary>
     </entry>
