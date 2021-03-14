@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{78:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Major League Hacking Fellows Recap of Winter 2020 Program","permalink":"/blog/hola"},{"title":"Major League Hacking Fellows Recap of Summer 2020 Program","permalink":"/blog/welcome"}]}')}}]);

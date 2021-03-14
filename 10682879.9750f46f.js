@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{73:function(n){n.exports=JSON.parse('{"allTagsPath":"/amplify-cli-monorepo-tour/blog/tags","slug":"student-internships","name":"student internships","count":2,"permalink":"/amplify-cli-monorepo-tour/blog/tags/student-internships"}')}}]);

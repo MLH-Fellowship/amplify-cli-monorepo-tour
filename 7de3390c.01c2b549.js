@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{89:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"aws-mobile","name":"aws mobile","count":2,"permalink":"/blog/tags/aws-mobile"}')}}]);
