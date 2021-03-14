@@ -87,9 +87,13 @@ Example
 
 - Then `expect` and `send` commands are used in combination in the expect script.
 
+- All these scripts are called from the CircleCI
+
 CircleCI believes in configuration as code. Your entire continuous integration and deployment process is orchestrated through a single config file as mentioned below.
 
 Now open the `config.base.yml` file.
+
+This file is a collection of workflows, jobs and steps.  Workflows are responsible for orchestrating multiple jobs. Jobs are responsible for running a series of steps that perform commands. Steps run commands (such as installing dependencies or running tests) and shell scripts to do the work required for our project.
 
 YAML allows declaring a node as an anchor. This means this node will be referred to somewhere later in the YAML.
 
@@ -99,4 +103,78 @@ We can use an anchor at the beginning of our config file to set these lines as o
 
 Then we use an alias with each job to write less lines.
 
+![](./assets/alias.png)
 
+This way we didn’t just reduce the number of lines. We’ve made it easier to maintain the YAML file.
+
+This is followed by a set of reusable commands like `update_os_packages` which can be called as steps in any job(s) in this `config`.
+
+This is followed by a set of jobs which are the building blocks of our CI/CD pipeline. Each job must declare an executor. In our case most jobs use the docker container as executor which is defined as an anchor at the beginning of the `config` file.
+
+![](./assets/job.png)
+
+Each separate job defined within our `config` will run in a unique executor. The Primary container is defined by the first image listed in the `config` file. This is where commands are executed. The Docker executor spins up a container with a Docker image.
+
+![](./assets/executor.png)
+
+Workflows define a list of jobs and their run order. We have 2 workflows for our Amplify CLI project:-
+
+- `nightly_console_integration_tests` - This workflow runs jobs only on the `master` branch on a schedule using `cron`. It builds the project, publishes it to local registry and then runs amplify console integration tests.
+
+- `build_test_deploy` - This workflow is self defining and runs a large set of jobs while defining run order, dependencies and approval to eventually make a new github release.
+
+### Scripts
+
+The `scripts` directory is a combination of JavaScript and TypeScript files.
+
+```
+├── constants.ts
+├── echo-current-cli-version.js
+├── github-common.ts
+├── github-prerelease.ts
+├── github-release.ts
+├── link-bin.js
+├── split-e2e-tests.ts
+└── unified-changelog.ts
+```
+
+The `github-common.ts` has constants and utils shared by `github-prerelease.ts` and `github-release.ts`.
+
+These scripts are used in various jobs in the CircleCI `config.base.yml` file.
+
+The `unified-changelog.ts` script is used to generate a unified changelog and the `echo-current-cli-version.js` script is used to save new Amplify GitHub tag under the `publish_to_local_registry` job in CircleCI.
+
+The `github-prerelease.ts` script is used to publish Amplify CLI GitHub prerelease under the `github_prerelease` job in CircleCI.
+
+The `github-release.ts` script is used to publish Amplify CLI GitHub release under the `github_release` job in CircleCI.
+
+The `split-e2e-tests.ts` is an interesting script which defines concurrency (no. of parallel jobs allowed) and different AWS regions which are used to run the tests. It has a long array of test suites sorted according to their runtime and utilities like `sortTestsBasedOnTime` help to achieve the same.
+
+The execution of the `split-e2e-tests.ts` script starts from the [main function](https://github.com/aws-amplify/amplify-cli/blob/f3b1d1d66fa2705a6ee73b5732c3919cd77632f7/scripts/split-e2e-tests.ts#L306). 
+
+The initial step is to load the `config.base.yml` file using the `loadConfig()` function. 
+
+Then the `splitTests()` function takes the CircleCI config and converts each test inside that job into a separate job.
+
+The last step is to generate a new `config.yml` file using the `saveConfig()` function.
+
+### Cypress
+
+The `cypress` directory mainly has 2 integration tests for `auth` and `api`.
+
+```
+├── fixtures
+│   └── example.json
+├── integration
+│   ├── api_spec.js
+│   └── auth_spec.js
+├── plugins
+│   └── index.js
+└── support
+    ├── commands.js
+    └── index.js
+```
+
+The `auth_spec.js` file tests the withAuthenticator Sign In functionality.
+
+The `api_spec.js` file tests the API functionality by adding and requesting data from DynamoDB.
