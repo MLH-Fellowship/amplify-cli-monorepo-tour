@@ -4,7 +4,10 @@ module.exports = {
     {
       type: "category",
       label: "amplify-util-mock",
-      items: ["amplify-util-mock/index"],
+      items: [
+        "amplify-util-mock/index",
+        "amplify-util-mock/commands",
+      ],
     },
   ],
 };

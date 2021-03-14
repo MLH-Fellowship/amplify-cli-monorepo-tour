@@ -1,6 +1,6 @@
 module.exports = {
   title: "Amplify CLI Monorepo Tour",
-  tagline: "The tagline of my site",
+  tagline: "A guide for software developers by software developers",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -33,17 +33,22 @@ module.exports = {
     },
     footer: {
       style: "dark",
+      logo: {
+        alt: "AWS Amplify Logo",
+        src: "img/logo.svg",
+        href: "https://aws.amazon.com/amplify/",
+      },
       links: [
         {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
+              label: "Amplify CLI",
               to: "docs/",
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2/",
+              label: "amplify-util-mock",
+              to: "docs/amplify-util-mock/",
             },
           ],
         },
@@ -51,16 +56,16 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Official GitHub",
+              href: "https://github.com/aws-amplify",
             },
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.gg/amplify",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/AWSAmplify",
             },
           ],
         },
@@ -75,7 +80,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MLH-Fellowship. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -86,7 +91,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/MLH-Fellowship/amplify-cli-monorepo-tour/edit/main/",
         },
         blog: {
           showReadingTime: true,
