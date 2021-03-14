@@ -56,6 +56,10 @@ module.exports = {
               label: "amplify-util-mock",
               to: "docs/amplify-util-mock/",
             },
+            {
+              label: "amplify-cli",
+              to: "docs/amplify-cli/",
+            },
           ],
         },
         {
