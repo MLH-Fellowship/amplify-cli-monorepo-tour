@@ -5,7 +5,12 @@ sidebar_label: Commands
 slug: /amplify-util-mock/commands
 ---
 
-:::caution Pre-requisite 
+import Tabs from "@theme/Tabs";
+
+import TabItem from "@theme/TabItem";
+import TabAmplifyPlugin from "./_shared/tab-amplify-plugin-ts.md";
+
+:::caution Pre-requisite
 Java is required on your development workstation to use Local Mocking in Amplify
 :::
 
@@ -58,20 +63,37 @@ amplify mock storage
 # Help!
 amplify mock help
 ```
+
 ## Folder Structure
 
 ```bash {2}
 # /amplify-util-mock/src
 
-├── amplify-plugin-index.ts
-├── api
-├── CFNParser
-├── commands
-├── __e2e__
-├── func
-├── index.ts
-├── mockAll.ts
-├── storage
-├── __tests__
-└── utils
+├── amplify-plugin-index.ts # Handles the entry point
+├── api                     # AppSync Mocking
+├── CFNParser               # CloudFormation Template Parser
+├── commands                # Handles the mock commands
+├── __e2e__                 # E2E Tests
+├── func                    # For mocking Lambda functions
+├── index.ts                # Entry point of all commands
+├── mockAll.ts              # Mocking all the available resources
+├── storage                 # Mocking Storage
+├── __tests__               # Tests
+└── utils                   # Utility Programs
 ```
+
+<Tabs
+  defaultValue="amplify-plugin-ts"
+  values={[
+    { label: "amplify-plugin-index.ts", value: "amplify-plugin-ts" },
+    { label: "api", value: "api" },
+    { label: "commands", value: "commands" },
+    { label: "func", value: "func" },
+    { label: "mockAll.ts", value: "mockall" },
+    { label: "storage", value: "storage" },
+  ]}
+>
+  <TabItem value="amplify-plugin-ts">
+    <TabAmplifyPlugin />
+  </TabItem>
+</Tabs>
