@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Amplify CLI Monorepo Tour',
   tagline: 'A guide for software developers by software developers',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://mlh-fellowship.github.io',
+  baseUrl: '/amplify-cli-monorepo-tour/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'MLH-Fellowship', // Usually your GitHub org/user name.
+  projectName: 'amplify-cli-monorepo-tour', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Amplify CLI',
