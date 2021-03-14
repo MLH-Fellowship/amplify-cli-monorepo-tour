@@ -1,6 +1,6 @@
 module.exports = {
   title: "Amplify CLI Monorepo Tour",
-  tagline: "A guide for software developers by software developers",
+  tagline: "A guide for software developers by software developers.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
