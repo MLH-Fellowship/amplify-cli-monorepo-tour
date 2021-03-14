@@ -2,7 +2,7 @@ module.exports = {
   title: "Amplify CLI Monorepo Tour",
   tagline: "A guide for software developers by software developers.",
   url: "https://mlh-fellowship.github.io/amplify-cli-monorepo-tour/",
-  baseUrl: "/",
+  baseUrl: "/amplify-cli-monorepo-tour/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
