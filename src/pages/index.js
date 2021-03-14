@@ -8,32 +8,47 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Data modeling with GraphQL',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      The GraphQL Transform library allows you to deploy AWS AppSync GraphQL APIs
+      with features like NoSQL databases, authentication, elasticsearch engines, 
+      lambda function resolvers, relationships, authorization, and more using 
+      GraphQL schema directives.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Multiple environments',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      Support for multiple environments. When you initialize a project with the
+      CLI, you create an Amplify backend environment. Every Amplify backend
+      environment is a container for the categories added to your project.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Infrastructure as code',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      The AWS Amplify CLI uses AWS CloudFormation and nested stacks. This allows
+      you to add or modify configurations locally before you push them for execution
+      in your account.
+      </>
+    ),
+  },
+  {
+    title: 'Local mocking',
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+      Amplify supports running a local server for mocking and testing your application
+      before pushing to the cloud with certain categories, including API, Storage,
+      Functions, and Hosting.
       </>
     ),
   },
