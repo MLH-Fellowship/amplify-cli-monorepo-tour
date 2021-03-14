@@ -1,3 +1,10 @@
+---
+id: amplify-env
+title: Amplify Multienv
+sidebar_label: Amplify Multienv
+slug: /amplify-cli/amplify-env
+---
+
 Amplify CLI supports creating multiple backend environments. Each Amplify backend environment is a container for the categories added to your project. You can find more information about multi-environment feature [here](https://docs.amplify.aws/cli/teams/overview).
 
 The code for multi-environment resides in the `packages/amplify-cli/src/commands/env` directory. It has the following files for each command -
