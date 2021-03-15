@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{103:function(o){o.exports=JSON.parse('{"allTagsPath":"/amplify-cli-monorepo-tour/blog/tags","slug":"aws-mobile","name":"aws mobile","count":2,"permalink":"/amplify-cli-monorepo-tour/blog/tags/aws-mobile"}')}}]);
