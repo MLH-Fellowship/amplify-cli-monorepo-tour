@@ -5,6 +5,8 @@ sidebar_label: Amplify CLI
 slug: /
 ---
 
+![Amplify CLI Working](./assets/cli-b-roll.gif)
+
 The Amplify Command Line Interface (CLI) monorepo tour is a guide for software developers by software developers. This guide aims to help new Amazon engineers and the huge awesome community of open source contributors to get started with the development and improvement of the Amplify CLI.
 
 The goal and objective of this guide is to reduce the time taken to get familiar with the code, architecture and configuration of the large number of packages in the Amplify CLI monorepo by explaining the magic happening under the hood when you run a Amplify CLI command on your terminal.
