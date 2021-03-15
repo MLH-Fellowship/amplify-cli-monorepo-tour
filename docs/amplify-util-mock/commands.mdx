@@ -9,6 +9,11 @@ import Tabs from "@theme/Tabs";
 
 import TabItem from "@theme/TabItem";
 import TabAmplifyPlugin from "./_shared/tab-amplify-plugin-ts.md";
+import TabApi from "./_shared/tab-api.md";
+import TabCommands from "./_shared/tab-commands.md";
+import TabFunc from "./_shared/tab-func.md";
+import TabMockall from "./_shared/tab-mockall.md";
+import TabStorage from "./_shared/tab-storage.md";
 
 :::caution Pre-requisite
 Java is required on your development workstation to use Local Mocking in Amplify
@@ -82,6 +87,8 @@ amplify mock help
 └── utils                   # Utility Programs
 ```
 
+### Details of files and folders:
+
 <Tabs
   defaultValue="amplify-plugin-ts"
   values={[
@@ -95,5 +102,20 @@ amplify mock help
 >
   <TabItem value="amplify-plugin-ts">
     <TabAmplifyPlugin />
+  </TabItem>
+  <TabItem value="api">
+    <TabApi />
+  </TabItem>
+  <TabItem value="commands">
+    <TabCommands />
+  </TabItem>
+  <TabItem value="func">
+    <TabFunc />
+  </TabItem>
+  <TabItem value="mockall">
+    <TabMockall />
+  </TabItem>
+  <TabItem value="storage">
+    <TabStorage />
   </TabItem>
 </Tabs>
