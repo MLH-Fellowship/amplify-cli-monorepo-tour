@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{81:function(o){o.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Major League Hacking Fellows Recap of Winter 2020 Program","permalink":"/amplify-cli-monorepo-tour/blog/hola"},{"title":"Major League Hacking Fellows Recap of Summer 2020 Program","permalink":"/amplify-cli-monorepo-tour/blog/welcome"}]}')}}]);
