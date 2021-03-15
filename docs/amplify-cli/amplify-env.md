@@ -1,7 +1,7 @@
 ---
 id: amplify-env
-title: Amplify Multienv
-sidebar_label: Amplify Multienv
+title: amplify env
+sidebar_label: amplify env
 slug: /amplify-cli/amplify-env
 ---
 

@@ -3,11 +3,6 @@ module.exports = {
     "amplify-cli",
     {
       type: "category",
-      label: "amplify-util-mock",
-      items: ["amplify-util-mock/index", "amplify-util-mock/commands"],
-    },
-    {
-      type: "category",
       label: "amplify-cli",
       items: ["amplify-cli/index", "amplify-cli/amplify-env"],
     },
@@ -26,5 +21,10 @@ module.exports = {
       label: "amplify-category-api",
       items: ["amplify-category-api/index"],
     },
+    {
+      type: "category",
+      label: "amplify-util-mock",
+      items: ["amplify-util-mock/index", "amplify-util-mock/commands"],
+    }
   ],
 };

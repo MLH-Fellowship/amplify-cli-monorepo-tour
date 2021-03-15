@@ -1,7 +1,7 @@
 ---
 id: index
-title: Amplify CLI Package
-sidebar_label: Amplify CLI Package
+title: Introduction
+sidebar_label: Introduction
 slug: /amplify-cli
 ---
 
